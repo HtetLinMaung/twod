@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: '2D App',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xffff6666)),
         useMaterial3: true,
         // cardColor: Colors.white,
       ),
@@ -428,14 +428,15 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: const Color(0xffEFF0F3),
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: const Color(0xffff6666),
+        // backgroundColor: const Color(0xfff58a38),
         title: Text(
           '၂ လုံးထီ စာရင်း',
           style: GoogleFonts.poppins(
             textStyle: const TextStyle(
               fontSize: 16.0,
               fontWeight: FontWeight.bold,
-              color: Colors.black,
+              color: Colors.white,
             ),
           ),
         ),
@@ -443,7 +444,7 @@ class _MyHomePageState extends State<MyHomePage> {
           IconButton(
             icon: const Icon(
               Icons.filter_list,
-              color: Colors.black,
+              color: Colors.white,
             ),
             onPressed: () {
               showFilterDialog(fromDate, toDate, search);
@@ -462,7 +463,7 @@ class _MyHomePageState extends State<MyHomePage> {
               color: Colors.white,
               icon: const Icon(
                 Icons.view_module,
-                color: Colors.black,
+                color: Colors.white,
                 // color: Colors.white,
               ),
               // color: Colors.white, // Set the popup background to white
@@ -529,7 +530,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       summaryBets.isEmpty))
           ? Center(
               child: Text(
-                'အသစ်ထည့်ရန် အပေါင်းခလုတ်ကို တို့ပါ။',
+                'အသစ်ထည့်ရန် အပေါင်းခလုတ်ကို နှိပ်ပါ။',
                 style: GoogleFonts.poppins(),
               ),
             )
@@ -735,9 +736,11 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: showBettingDialog,
         tooltip: 'အပေါင်းခလုတ်',
-        backgroundColor: Colors.white, // Set background color to white
+        backgroundColor: const Color(0xffff6666),
+        // backgroundColor:
+        //     const Color(0xfff58a38), // Set background color to white
         shape: const CircleBorder(),
-        child: const Icon(Icons.add, color: Colors.black),
+        child: const Icon(Icons.add, color: Colors.white),
       ),
     );
   }
