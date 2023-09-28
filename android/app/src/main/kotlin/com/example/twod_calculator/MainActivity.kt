@@ -1,4 +1,4 @@
-package com.example.twod
+package com.example.twod_calculator
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:twod/bet.dart';
-import 'package:twod/database_helper.dart';
 import 'package:intl/intl.dart';
 // import 'package:twod/utils.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:twod_calculator/bet.dart';
+import 'package:twod_calculator/database_helper.dart';
 
 enum ViewType { listView, summaryView }
 

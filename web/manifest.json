@@ -1,6 +1,6 @@
 {
-    "name": "twod",
-    "short_name": "twod",
+    "name": "twod_calculator",
+    "short_name": "twod_calculator",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

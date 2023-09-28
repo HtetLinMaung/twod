@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:twod/bet.dart';
+import 'package:twod_calculator/bet.dart';
 
 class DatabaseHelper {
   static const _databaseName = "BettingDatabase.db";
